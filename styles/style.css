@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+  font-family: "Georgia", serif; /* Menggunakan font dengan gaya lebih klasik */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #faebd7; /* Antique White sebagai warna latar belakang */
+}
+
+/* Header */
+header {
+  background-color: #8b5e3c; /* Soft Brown sebagai warna header */
+  color: #fff8dc; /* Antique White untuk kontras */
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff8dc; /* Antique White */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+article {
+  flex: 3;
+  background-color: #fff; /* Background putih klasik untuk artikel */
+  padding: 20px;
+  margin-right: 20px;
+  border: 1px solid #cbb994; /* Warna beige vintage */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sedikit bayangan untuk efek klasik */
+}
+
+article header,
+article footer {
+  border: 2px dashed #8b5e3c; /* Soft Brown dengan border dashed */
+  padding: 10px;
+  background: none; /* Tetap tidak ada latar belakang */
+  margin-bottom: 20px;
+  border-radius: 5px; /* Sudut yang melengkung sedikit */
+  color: #5c4033; /* Soft Brown yang lebih gelap */
+}
+
+aside {
+  flex: 1;
+  background-color: #fff; /* Putih untuk aside */
+  padding: 20px;
+  border: 1px solid #cbb994; /* Border vintage warna beige */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #8b5e3c; /* Warna coklat vintage untuk footer */
+  color: #fff8dc; /* Warna beige terang untuk kontras */
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  article {
+    margin-right: 0;
+  }
+}
